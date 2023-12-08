@@ -236,6 +236,7 @@ if (height){
 } else {
     console.log('Height is Undefined!')
 }
+bug --> having any falsy value as value here will run the else statement .
 */
 
 /*
@@ -255,7 +256,6 @@ if (favouriteNumber === 23) console.log("Cool! 23 is an amazing number!")
 let favouriteNumber= Number(prompt("What's Your Favourite Number?"));
 console.log(favouriteNumber);
 console.log(typeof favouriteNumber);
-
 if (favouriteNumber === 23){
     console.log("Cool! 23 is an amazing number !")
 } else if (favouriteNumber === 7) {
@@ -263,7 +263,6 @@ if (favouriteNumber === 23){
 } else {
     console.log("Number is not 23 or 7 !")
 }
-
 if (favouriteNumber !== 23) console.log("Why not 23!")
 */
 
@@ -281,7 +280,7 @@ if (hasDriversLicense && hasGoodVision){
     console.log("Someone else should drive..!")
 }
 
-const isTired = false;
+const isTired = true;
 console.log(hasDriversLicense && hasGoodVision && isTired);
 console.log(hasDriversLicense && hasGoodVision || isTired);
 console.log(hasDriversLicense || hasGoodVision && isTired); // Observe.
